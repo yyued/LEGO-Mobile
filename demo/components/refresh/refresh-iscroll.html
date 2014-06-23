@@ -1,0 +1,126 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+	<meta name="description" content="">
+	<meta name="keywords" content="">
+	<meta name="format-detection" content="telephone=no,address=no,email=no">
+	<title></title>
+
+	<!-- legomobi reset样式开始 -->
+	<link rel="stylesheet" type="text/css" href="../../../dist/css/style.css">
+	<!-- legomobi reset样式结束 -->
+
+	<!-- SeaJs库开始 -->
+	<script src="../../../dist/js/sea.js"></script>
+    <script src="../../../dist/js/config.js"></script>
+	<!-- SeaJs库开始 -->
+
+</head>
+<body class="body-background-color1">
+	<div class="m-refresh-wrapper" id="m-refresh">
+		<div class="m-refresh-inner">
+			<div class="m-refresh-up">
+				<span class="m-refresh-icon"></span>
+				<span class="m-refresh-label">加载更多</span>
+			</div>
+			<ul class="m-newslist">
+				<li class="m-newslist__item"><a href="javascript:void(0)" data-touch="on">
+					<img src="http://art.yypm.com/80x60/EAEAEA/333" alt="">
+					<div class="m-newslist__item__cont">
+						<h3>曾经辉煌如今经典 盘点陪伴80后成长的游戏</h3>
+						<p>堕落是内生的</p>
+						<p>堕落是内生的</p>
+						<p>堕落是内生的</p>
+					</div>
+				</a></li>
+				<li class="m-newslist__item"><a href="javascript:void(0)" data-touch="on">
+					<img src="http://art.yypm.com/80x60/EAEAEA/333" alt="">
+					<div class="m-newslist__item__cont">
+						<h3>曾经辉煌如今经典 盘点陪伴80后成长的游戏</h3>
+						<p>堕落是内生的</p>
+					</div>
+				</a></li>
+				<li class="m-newslist__item"><a href="javascript:void(0)" data-touch="on">
+					<img src="http://art.yypm.com/80x60/EAEAEA/333" alt="">
+					<div class="m-newslist__item__cont">
+						<h3>曾经辉煌如今经典 盘点陪伴80后成长的游戏</h3>
+						<p>堕落是内生的</p>
+					</div>
+				</a></li>
+				<li class="m-newslist__item"><a href="javascript:void(0)" data-touch="on">
+					<img src="http://art.yypm.com/80x60/EAEAEA/333" alt="">
+					<div class="m-newslist__item__cont">
+						<h3>曾经辉煌如今经典 盘点陪伴80后成长的游戏</h3>
+						<p>堕落是内生的</p>
+					</div>
+				</a></li>
+				<li class="m-newslist__item"><a href="javascript:void(0)" data-touch="on">
+					<img src="http://art.yypm.com/80x60/EAEAEA/333" alt="">
+					<div class="m-newslist__item__cont">
+						<h3>曾经辉煌如今经典 盘点陪伴80后成长的游戏</h3>
+						<p>堕落是内生的</p>
+					</div>
+				</a></li>
+				<li class="m-newslist__item"><a href="javascript:void(0)" data-touch="on">
+					<img src="http://art.yypm.com/80x60/EAEAEA/333" alt="">
+					<div class="m-newslist__item__cont">
+						<h3>曾经辉煌如今经典 盘点陪伴80后成长的游戏</h3>
+						<p>堕落是内生的</p>
+					</div>
+				</a></li>
+			</ul>
+			<div class="m-refresh-down">
+				<span class="m-refresh-icon"></span>
+				<span class="m-refresh-label">加载更多</span>
+			</div>
+			<div class="test-con" style="display:none;">
+				<li class="m-newslist__item"><a href="javascript:void(0)" data-touch="on">
+					<img src="http://art.yypm.com/80x60/EAEAEA/333" alt="">
+					<div class="m-newslist__item__cont">
+						<h3>曾经辉煌如今经典 盘点陪伴80后成长的游戏</h3>
+						<p>堕落是内生的</p>
+					</div>
+				</a></li>
+				<li class="m-newslist__item"><a href="javascript:void(0)" data-touch="on">
+					<img src="http://art.yypm.com/80x60/EAEAEA/333" alt="">
+					<div class="m-newslist__item__cont">
+						<h3>曾经辉煌如今经典 盘点陪伴80后成长的游戏</h3>
+						<p>堕落是内生的</p>
+					</div>
+				</a></li>
+				<li class="m-newslist__item"><a href="javascript:void(0)" data-touch="on">
+					<img src="http://art.yypm.com/80x60/EAEAEA/333" alt="">
+					<div class="m-newslist__item__cont">
+						<h3>曾经辉煌如今经典 盘点陪伴80后成长的游戏</h3>
+						<p>堕落是内生的</p>
+					</div>
+				</a></li>
+			</div>
+		</div>
+	</div>
+</body>
+<script>
+	seajs.use(['refresh','MO','zepto'], function(refresh, mo, zepto){
+		$("#m-refresh").height(window.innerHeight);
+		
+		var Refresh = $("#m-refresh").Refresh({
+			afterRefresh : function(direction, type){
+				var _ts = this;
+				setTimeout(function(){
+					var _html = $(".test-con").find("li").clone();
+					if(direction == 'up'){
+						$(".m-newslist").prepend(_html)
+					}else if(direction == 'down'){
+						$(".m-newslist").append(_html)
+					}
+					//数据加载完成后改变状态
+					_ts.afterRefreshLoading(direction);
+					
+				},1000);
+			}
+		});
+	});
+</script>
+</html>

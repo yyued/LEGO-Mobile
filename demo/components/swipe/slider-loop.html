@@ -1,0 +1,57 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+	<meta name="description" content="">
+	<meta name="keywords" content="">
+	<meta name="format-detection" content="telephone=no,address=no,email=no">
+	<title></title>
+
+	<!-- legomobi reset样式开始 -->
+	<link rel="stylesheet" type="text/css" href="../../../dist/css/style.css">
+	<!-- legomobi reset样式结束 -->
+
+	<!-- SeaJs库开始 -->
+	<script src="../../../dist/js/sea.js"></script>
+    <script src="../../../dist/js/config.js"></script>
+	<!-- SeaJs库开始 -->
+
+</head>
+<body>
+	<h2 style="margin:10px 0;text-align:center;">LoopSlider</h2>
+
+    <div class='m-slider'>
+    	<div id="LoopSlider" class="m-sliderloop-wrap">
+            <ul class="m-sliderloop-scroll">
+            	<li class="m-slider-con">
+                    <a href="#"><img src="http://art.yypm.com/320x160x1" data-src="http://art.yypm.com/320x160x1"></a>
+                </li>
+                <li class="m-slider-con">
+                    <a href="#"><img src="http://art.yypm.com/320x160x1" data-src="http://art.yypm.com/320x160x2"></a>
+                </li>
+                <li class="m-slider-con">
+                    <a href="#"><img src="http://art.yypm.com/320x160x1" data-src="http://art.yypm.com/320x160x3"></a>
+                </li>
+                <li class="m-slider-con">
+                    <a href="#"><img src="http://art.yypm.com/320x160x1" data-src="http://art.yypm.com/320x160x4"></a>
+                </li>
+            </ul>
+	    	<ul class="m-slider-trigger">
+	    		<li class="current"></li>
+	    		<li></li>
+	    		<li></li>
+	    		<li></li>
+	        </ul>
+    	</div>
+    </div>
+</body>
+<script>
+	seajs.use(['slider','MO','zepto'], function(Slider, mo, zepto){
+		var slider2 = new Slider("#LoopSlider",{
+			auto : 4000
+		});
+		slider2.loop();
+	});
+</script>
+</html>

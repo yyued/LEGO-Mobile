@@ -1,0 +1,26 @@
+{
+  "name": "mgameintro",
+  "version": "0.0.1",
+  "homepage": "index",
+  "devDependencies": {
+    "grunt": "*",
+    "grunt-contrib-connect": "*",
+    "connect-livereload": "*",
+    "grunt-contrib-watch": "*",
+    "load-grunt-tasks": "*",
+    "network-address": "*",
+    "grunt-contrib-clean": "*",
+    "grunt-contrib-copy": "*",
+    "grunt-contrib-uglify": "*",
+    "grunt-contrib-cssmin": "*",
+    "grunt-sprite": "*",
+    "grunt-contrib-imagemin": "*",
+    "grunt-htmlhint": "*",
+    "grunt-contrib-csslint": "*",
+    "grunt-contrib-jshint": "*",
+    "jshint-stylish": "*",
+    "grunt-contrib-sass": "*",
+    "grunt-autoprefixer": "*",
+    "gm": "*"
+  }
+}

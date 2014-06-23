@@ -1,0 +1,227 @@
+/* Demo Style */
+/* line 2, ../../sass/demo.scss */
+html {
+  width: 100%;
+  height: 100%;
+}
+
+/* line 6, ../../sass/demo.scss */
+.hidden {
+  display: none;
+}
+
+/* line 9, ../../sass/demo.scss */
+.ui-legoMo-viewport {
+  background-color: #f4f4f4;
+  width: 100%;
+  height: 100%;
+}
+
+/* line 14, ../../sass/demo.scss */
+.legoMo-home {
+  margin: 0 auto;
+  min-height: 100%;
+  position: relative;
+  overflow: hidden;
+}
+
+/* line 21, ../../sass/demo.scss */
+.legoMo-header {
+  height: 60px;
+  background-color: #fff;
+  border-width: 0 0 1px;
+  border-style: solid;
+  border-color: #d5d5d5;
+  margin-bottom: 20px;
+  position: static;
+}
+/* line 28, ../../sass/demo.scss */
+.legoMo-header h2 {
+  text-align: left;
+  line-height: 60px;
+  padding-left: 20px;
+}
+/* line 32, ../../sass/demo.scss */
+.legoMo-header h2 em {
+  padding-left: 0.5em;
+  font-size: 0.6em;
+}
+/* line 37, ../../sass/demo.scss */
+.legoMo-header .actionbar-l {
+  display: none;
+}
+
+/* line 42, ../../sass/demo.scss */
+.legoMo-footer {
+  height: 100px;
+  width: 100%;
+}
+
+/* line 47, ../../sass/demo.scss */
+.legoMo-content {
+  width: 55%;
+  float: right;
+}
+/* line 50, ../../sass/demo.scss */
+.legoMo-content .legoMo-sidebar {
+  display: none;
+}
+/* line 53, ../../sass/demo.scss */
+.legoMo-content .legoMo-content-container {
+  overflow: hidden;
+}
+/* line 56, ../../sass/demo.scss */
+.legoMo-content .legoMo-frame-warpper {
+  float: left;
+  background: url(../img/legophone.png) no-repeat;
+  padding: 67px 17px 104px;
+  width: 350px;
+  height: 480px;
+}
+/* line 63, ../../sass/demo.scss */
+.legoMo-content .legoMo-intro {
+  float: left;
+  width: 400px;
+  padding-top: 60px;
+}
+/* line 68, ../../sass/demo.scss */
+.legoMo-content iframe {
+  background-color: #fff;
+  width: 350px;
+  height: 480px;
+}
+
+/* line 75, ../../sass/demo.scss */
+.legoMo-sidebar {
+  min-width: 300px;
+  width: 25%;
+  left: 0;
+  float: left;
+}
+
+/* line 82, ../../sass/demo.scss */
+.legoMo-sidelist li {
+  position: relative;
+}
+/* line 84, ../../sass/demo.scss */
+.legoMo-sidelist li em {
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  right: 16px;
+  top: 16px;
+  border-width: 7px 9px;
+  border-color: transparent transparent transparent #707070;
+}
+/* line 95, ../../sass/demo.scss */
+.legoMo-sidelist li.active em {
+  right: 24px;
+  top: 20px;
+  border-width: 9px 7px;
+  border-color: #707070 transparent transparent transparent;
+}
+/* line 101, ../../sass/demo.scss */
+.legoMo-sidelist li.active .list-expand {
+  display: block;
+}
+/* line 105, ../../sass/demo.scss */
+.legoMo-sidelist li .list-expand {
+  display: none;
+}
+/* line 107, ../../sass/demo.scss */
+.legoMo-sidelist li .list-expand a {
+  padding-left: 20%;
+}
+/* line 112, ../../sass/demo.scss */
+.legoMo-sidelist a {
+  padding-left: 10%;
+  height: 45px;
+  line-height: 45px;
+  color: #333;
+  border-width: 0 0 1px;
+  border-style: solid;
+  border-color: #d5d5d5;
+  text-align: left;
+  display: block;
+  position: relative;
+}
+/* line 125, ../../sass/demo.scss */
+.legoMo-sidelist a:after {
+  -webkit-transition: opacity 500ms ease;
+  -moz-transition: opacity 500ms ease;
+  transition: opacity 500ms ease;
+}
+
+@media only screen and (max-width: 720px) {
+  /* line 134, ../../sass/demo.scss */
+  html {
+    margin-bottom: 400px;
+  }
+
+  /* line 137, ../../sass/demo.scss */
+  .legoMo-home {
+    -webkit-box-sizing: border-box;
+  }
+
+  /* line 141, ../../sass/demo.scss */
+  .legoMo-content {
+    width: 100%;
+    height: 100%;
+    float: none;
+  }
+  /* line 146, ../../sass/demo.scss */
+  .legoMo-content .legoMo-sidebar {
+    display: block;
+  }
+  /* line 149, ../../sass/demo.scss */
+  .legoMo-content .legoMo-frame-warpper {
+    display: none;
+  }
+
+  /* line 153, ../../sass/demo.scss */
+  .legoMo-sidebar {
+    float: none;
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden;
+    top: 61px;
+    background-color: #f4f4f4;
+  }
+
+  /* line 161, ../../sass/demo.scss */
+  .legoMo-header {
+    margin-bottom: 0;
+    width: 100%;
+    z-index: 10;
+  }
+  /* line 166, ../../sass/demo.scss */
+  .legoMo-header .actionbar-l {
+    display: block;
+  }
+  /* line 168, ../../sass/demo.scss */
+  .legoMo-header .actionbar-l a {
+    line-height: 100%;
+    height: 100%;
+  }
+  /* line 172, ../../sass/demo.scss */
+  .legoMo-header .actionbar-l a:after, .legoMo-header .actionbar-l a:before {
+    background-color: #000;
+  }
+  /* line 176, ../../sass/demo.scss */
+  .legoMo-header h2 {
+    text-align: center;
+  }
+
+  /* line 181, ../../sass/demo.scss */
+  .legoMo-sidelist a {
+    padding-left: 0;
+    text-align: center;
+  }
+  /* line 186, ../../sass/demo.scss */
+  .legoMo-sidelist li em {
+    display: none;
+  }
+}
+
+/*# sourceMappingURL=demo.css.map */

@@ -1,0 +1,113 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1,maximum-scale=1,user-scalable=no,width=device-width">
+    <meta name="apple-itunes-app" content="app-id=698076980" />
+    <meta name="Keywords" content="多玩游戏">
+    <meta name="description" content="">
+    <title>Lego Mobile Demos</title>
+
+    <!-- Style -->
+    <link href="../dist/css/style.css" rel="stylesheet">
+    <link href="css/demo.css" rel="stylesheet">
+    <!-- Style -->
+
+    <script src="../dist/js/sea.js"></script>
+    <script src="../dist/js/config.js"></script>
+
+    <script>
+        seajs.use("../demo/js/index");
+    </script>
+
+</head>
+<body class="ui-legoMo-viewport">
+
+    <!-- S legoMo-header -->
+    <div class="legoMo-header m-topbar">
+        <h2>Lego Mobile<em>v3.0.0</em></h2>
+        <div class="actionbar-l">
+            <a href="javascript:void(0)" class="bt-return" data-touch="on"> </a>
+        </div>
+    </div>
+    <!-- E legoMo-header -->
+
+    <div class="legoMo-home">
+
+        <!-- S legoMo-sidebar -->
+        <div class="legoMo-sidebar" id="ListControl">
+            <div class="legoMo-sidelist">
+                <ul>
+                    <li>
+                        <a href="list" class="list-node">List（列表）</a>
+                        <em></em>
+                    </li>
+                    <li>
+                        <a href="pop" class="list-node">Pop（弹窗）</a>
+                        <em></em>
+                    </li>
+                    <li>
+                        <a href="form" class="list-node">Form（表单）</a>
+                        <em></em>
+                    </li>
+                    <li>
+                        <a href="table" class="list-node">Table（表格）</a>
+                        <em></em>
+                    </li>
+                    <li>
+                        <a href="swipe" class="list-node">Swipe（轮播组件）</a>
+                        <em></em>
+                    </li>
+                    <li>
+                        <a href="button" class="list-node">Buttons（按钮组件）</a>
+                        <em></em>
+                    </li>
+                    <li>
+                        <a href="base" class="list-node">Base（基础页面结构模板）</a>
+                        <em></em>
+                    </li>
+                    <li>
+                        <a href="panel" class="list-node">Panel（面板切换组件）</a>
+                        <em></em>
+                    </li>
+                    <li>
+                        <a href="refresh" class="list-node">Refresh（滑动刷新&加载）</a>
+                        <em></em>
+                    </li>
+                    <li>
+                        <a href="dropmenu" class="list-node">Dropmenu（下拉菜单组件）</a>
+                        <em></em>
+                    </li>
+                    <li>
+                        <a href="scroll" class="list-node">Scroll（IScroll）</a>
+                        <em></em>
+                    </li>
+                    <li>
+                        <a href="lazyload" class="list-node">Lazyload（延迟加载）</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <!-- E legoMo-sidebar -->
+
+
+        <!-- S legoMo-content -->
+        <div class="legoMo-content" id="ContentControl">
+            <div class="legoMo-sidebar">
+                <div class="legoMo-sidelist"></div>
+            </div>
+
+            <div class="legoMo-content-container">
+                <div class="legoMo-frame-warpper">
+                    <iframe id="TargetFrame" src="" frameborder="0" scrolling="auto" allowtransparency="true"></iframe>
+                </div>
+
+            </div>
+        </div>
+        <!-- E legoMo-content -->
+        
+    </div>
+
+    <div class="legoMo-footer"></div>
+</body>
+</html>
